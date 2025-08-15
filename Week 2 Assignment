@@ -5,117 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML5 Assignment: Lists, Tables, Media, and Forms">
     <title>Enhanced HTML5 Form</title>
-    <style>
-        /* Basic CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #4CAF50;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        form {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        fieldset {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 15px;
-        }
-        legend {
-            font-weight: bold;
-            color: #4CAF50;
-        }
-        label {
-            display: inline-block;
-            width: 150px;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="password"],
-        select {
-            width: 200px;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        input[type="submit"],
-        input[type="reset"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        input[type="submit"]:hover,
-        input[type="reset"]:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4CAF50;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <!-- Semantic Header -->
@@ -133,7 +22,7 @@
     <main>
         <!-- Lists Section -->
         <section id="content">
-            <h2>Elly's List</h2>
+            <h2>Organized Content</h2>
             <article>
                 <h3>Grocery List (Unordered)</h3>
                 <ul>

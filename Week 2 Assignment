@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Assignment: Lists, Tables, Media, and Forms">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        select {
+            width: 200px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header>
+        <h1>HTML5 Content & Forms Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Lists Section -->
+        <section id="content">
+            <h2>Elly's List</h2>
+            <article>
+                <h3>Grocery List (Unordered)</h3>
+                <ul>
+                    <li>Apples</li>
+                    <li>Milk</li>
+                    <li>Bread</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Steps to Bake a Cake (Ordered)</h3>
+                <ol>
+                    <li>Preheat oven</li>
+                    <li>Mix ingredients</li>
+                    <li>Bake for 30 minutes</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Sample Table</h2>
+            <table border="1">
+                <caption>Monthly Budget</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Embedded Media</h2>
+            <video width="320" height="240" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>User Registration Form</h2>
+            <form action="#" method="post">
+                <!-- Personal Information Fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                    </div>
+                </fieldset>
+
+                <!-- Account Information Fieldset -->
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required minlength="4" maxlength="12" placeholder="4-12 characters">
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+                    </div>
+                </fieldset>
+
+                <!-- Preferences Fieldset -->
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div>
+                        <label for="newsletter">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    </div>
+                    <div>
+                        <label for="theme">Preferred Theme:</label>
+                        <select id="theme" name="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2025 HTML5 Assignment. All rights reserved.</p>
+    </footer>
+</body>
+</html>
